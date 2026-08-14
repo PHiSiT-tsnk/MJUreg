@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ตรวจสอบจบ - MJU REG</title>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col font-sans">
+
+  <header class="bg-[#004d25] text-white p-4 border-b-4 border-green-700 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
+      <div>
+        <h1 class="text-xl font-bold tracking-wide">มหาวิทยาลัยแม่โจ้ MAEJO UNIVERSITY</h1>
+        <p class="text-xs text-green-200">ระบบบริการการศึกษา (REG MJU)</p>
+      </div>
+    </div>
+  </header>
+
+  <aside class="bg-slate-800 text-white text-xs py-2 px-4 border-b-2 border-yellow-500">
+    <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
+      <span>680410XXXX : นายXXษฐ์ </span>
+      <span class="text-yellow-400 font-semibold">ระบบตรวจสอบสำเร็จการศึกษา</span>
+    </div>
+  </aside>
+
+  <div class="max-w-7xl mx-auto w-full p-4 flex-1">
+    <div class="grid grid-cols-1 md:grid-cols-[1fr_260px] lg:grid-cols-[240px_1fr_260px] gap-4">
+      
+      <nav class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm md:col-span-2 lg:col-span-1 h-fit">
+        <h2 class="text-base font-bold text-[#004d25] pb-2 mb-3 border-b-2 border-green-100">เมนูหลัก</h2>
+        <ul class="flex flex-col gap-1">
+          <li><a href="index.html" class="block py-2 px-3 text-[#004d25] hover:bg-green-50 font-semibold rounded text-sm transition">1. ประวัติผู้ใช้งานระบบ</a></li>
+          <li><a href="graduate_check.html" class="block py-2 px-3 bg-[#004d25] text-white font-semibold rounded text-sm">2. ตรวจสอบจบ</a></li>
+          <li><a href="history.html" class="block py-2 px-3 text-[#004d25] hover:bg-green-50 font-semibold rounded text-sm transition">3. ประวัติการเข้าใช้ระบบ</a></li>
+          <!-- เทา -->
+          <li><span class="block py-2 px-3 text-slate-400 bg-slate-50 rounded text-sm cursor-not-allowed">ผลการลงทะเบียน (ปิดใช้งาน)</span></li>
+          <li><span class="block py-2 px-3 text-slate-400 bg-slate-50 rounded text-sm cursor-not-allowed">ตารางเรียน/สอบ (ปิดใช้งาน)</span></li>
+          <li><span class="block py-2 px-3 text-slate-400 bg-slate-50 rounded text-sm cursor-not-allowed">ภาระค่าใช้จ่าย/ทุน (ปิดใช้งาน)</span></li>
+          <li><span class="block py-2 px-3 text-slate-400 bg-slate-50 rounded text-sm cursor-not-allowed">ผลการศึกษา (ปิดใช้งาน)</span></li>
+          <li><span class="block py-2 px-3 text-slate-400 bg-slate-50 rounded text-sm cursor-not-allowed">ออกจากระบบ (ปิดใช้งาน)</span></li>
+        </ul>
+      </nav>
+
+      <main class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+        <section>
+          <h2 class="text-lg font-bold text-orange-700 pb-2 mb-4 border-b-2 border-orange-200">ตรวจสอบจบ</h2>
+          
+          <div class="mb-4">
+            <label class="text-xs font-bold text-slate-600 block mb-1">โครงสร้างหลักสูตร:</label>
+            <select class="w-full max-w-md p-2 text-sm border border-slate-300 rounded focus:ring-2 focus:ring-green-500">
+              <option>65304010 : วิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์</option>
+            </select>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs md:text-sm text-left border-collapse border border-slate-200">
+              <thead>
+                <tr class="bg-[#004d25] text-white">
+                  <th class="p-2 border border-slate-300">หมวดวิชา</th>
+                  <th class="p-2 border border-slate-300">โครงสร้าง</th>
+                  <th class="p-2 border border-slate-300">เรียนได้</th>
+                  <th class="p-2 border border-slate-300">GPA</th>
+                  <th class="p-2 border border-slate-300">สถานภาพ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-slate-200 hover:bg-slate-50">
+                  <td class="p-2 border border-slate-200">1. กลุ่มสังคมและวัฒนธรรม</td>
+                  <td class="p-2 border border-slate-200">6</td>
+                  <td class="p-2 border border-slate-200">3</td>
+                  <td class="p-2 border border-slate-200">4.00</td>
+                  <td class="p-2 border border-slate-200 text-red-600 font-bold">FAIL</td>
+                </tr>
+                <tr class="border-b border-slate-200 hover:bg-slate-50">
+                  <td class="p-2 border border-slate-200">2. กลุ่มคุณค่าความเป็นมนุษย์</td>
+                  <td class="p-2 border border-slate-200">3</td>
+                  <td class="p-2 border border-slate-200">3</td>
+                  <td class="p-2 border border-slate-200">4.00</td>
+                  <td class="p-2 border border-slate-200 text-green-600 font-bold">PASS</td>
+                </tr>
+                <tr class="border-b border-slate-200 hover:bg-slate-50">
+                  <td class="p-2 border border-slate-200">3. วิชาเฉพาะ-กลุ่มวิชาเอกบังคับ</td>
+                  <td class="p-2 border border-slate-200">45</td>
+                  <td class="p-2 border border-slate-200">12</td>
+                  <td class="p-2 border border-slate-200">4.00</td>
+                  <td class="p-2 border border-slate-200 text-red-600 font-bold">FAIL</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <aside class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm h-fit">
+        <h2 class="text-base font-bold text-[#004d25] pb-2 mb-3 border-b-2 border-green-100">สรุปภาพรวม</h2>
+        <div class="text-sm space-y-2">
+          <p><strong>สถานะรวม:</strong> <span class="text-red-600 font-bold">FAIL (ยังไม่ครบ)</span></p>
+          <p><strong>หน่วยกิตขาด:</strong> <span class="text-red-600 font-bold">84 หน่วยกิต</span></p>
+          <p><strong>หน่วยกิตผ่าน:</strong> 36 / 120</p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="bg-slate-900 text-slate-400 text-xs py-4 text-center border-t-4 border-[#004d25] mt-auto">
+    <p>&copy; 2026 กลุ่มภารกิจทะเบียนเรียน ประมวลผล และรับเข้า มหาวิทยาลัยแม่โจ้</p>
+  </footer>
+
+</body>
+</html>

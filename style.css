@@ -1,0 +1,239 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* หน้าเว็บ */
+body {
+  font-family: 'Sarabun', 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.5;
+  color: #333333;
+  background: linear-gradient(180deg, #d4ebd0 0%, #f1f8f0 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* รูปภาพย่อขยาย */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ลิ้ง */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* กรอบเนื้อหาหลัก */
+.container {
+  width: min(100% - 2rem, 80rem);
+  margin-inline: auto;
+}
+
+/* แถบแบนเนอร์สีเขียว */
+.mju-banner {
+  background-color: #004d25;
+  color: #ffffff;
+  padding: 1rem;
+  border-bottom: 4px solid #15803d;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+}
+
+.university-title h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.university-title p {
+  font-size: 0.85rem;
+  color: #86efac;
+}
+
+/* สถานะผู้ใช้งาน */
+.user-status-bar {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-bottom: 3px solid #eab308;
+}
+
+/* หน้าเว็บหลัก */
+.main-wrapper {
+  flex: 1;
+  padding: 1.5rem 0;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+/* เมนูด้านซ้าย */
+.sidebar-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.sidebar-header {
+  background: #334155;
+  color: #ffffff;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-item a {
+  display: block;
+  padding: 0.65rem 1rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #004d25;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.menu-item a:hover {
+  background-color: #f0fdf4;
+  padding-left: 1.25rem;
+}
+
+.menu-item.active a {
+  background-color: #004d25;
+  color: #ffffff;
+}
+
+/* เมนูปุ่มสีเทา */
+.menu-item.disabled a {
+  color: #94a3b8;
+  background-color: #f8fafc;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.menu-item.disabled a::after {
+  content: " (ยังไม่เปิดใช้)";
+  font-size: 0.75rem;
+  color: #cbd5e1;
+}
+
+/* กเนื้อหา */
+.content-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.page-title {
+  color: #c2410c;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fdba74;
+  padding-bottom: 0.4rem;
+}
+
+/* ตารางข้อมูล */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.info-table th, .info-table td {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #e2e8f0;
+}
+
+.info-table th {
+  background-color: #004d25;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: left;
+}
+
+.info-table tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.section-header-row {
+  background-color: #004d25 !important;
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.label-cell {
+  background-color: #f1f5f9;
+  font-weight: 600;
+  width: 30%;
+  color: #334155;
+}
+
+/* สถานะ ผ่าน/ไม่ผ่าน */
+.badge-pass {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.badge-fail {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+/* เลือกข้อมูล */
+.form-control {
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+/* แถบล่างเว็บ */
+.site-footer {
+  background-color: #1e293b;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  border-top: 3px solid #004d25;
+}
+
+/* แท็บเล็ตกับคอมพิวเตอร์ */
+@media (min-width: 768px) {
+  .layout-grid {
+    grid-template-columns: 240px 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}

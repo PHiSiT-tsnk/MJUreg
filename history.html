@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ประวัติการเข้าใช้ระบบ - MJU REG</title>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col font-sans">
+
+  <header class="bg-[#004d25] text-white p-4 border-b-4 border-green-700 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
+      <div>
+        <h1 class="text-xl font-bold tracking-wide">มหาวิทยาลัยแม่โจ้ MAEJO UNIVERSITY</h1>
+        <p class="text-xs text-green-200">ระบบบริการการศึกษา (REG MJU)</p>
+      </div>
+    </div>
+  </header>
+
+  <aside class="bg-slate-800 text-white text-xs py-2 px-4 border-b-2 border-yellow-500">
+    <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
+      <span>680410XXXX : นายXXษฐ์ </span>
+      <span class="text-blue-400 font-semibold">สถิติการเข้าใช้งาน</span>
+    </div>
+  </aside>
+
+  <div class="max-w-7xl mx-auto w-full p-4 flex-1">
+    <div class="grid grid-cols-1 md:grid-cols-[1fr_260px] lg:grid-cols-[240px_1fr_260px] gap-4">
+      
+      <nav class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm md:col-span-2 lg:col-span-1 h-fit">
+        <h2 class="text-base font-bold text-[#004d25] pb-2 mb-3 border-b-2 border-green-100">เมนูหลัก</h2>
+        <ul class="flex flex-col gap-1">
+          <li><a href="index.html" class="block py-2 px-3 text-[#004d25] hover:bg-green-50 font-semibold rounded text-sm transition">1. ประวัติผู้ใช้งานระบบ</a></li>
+          <li><a href="graduate_check.html" class="block py-2 px-3 text-[#004d25] hover:bg-green-50 font-semibold rounded text-sm transition">2. ตรวจสอบจบ</a></li>
+          <li><a href="history.html" class="block py-2 px-3 bg-[#004d25] text-white font-semibold rounded text-sm">3. ประวัติการเข้าใช้ระบบ</a></li>
+          <!-- เทา -->
+          <li><span class="block py-2 px-3 text-slate-400 bg-slate-50 rounded text-sm cursor-not-allowed">ผลการลงทะเบียน (ปิดใช้งาน)</span></li>
+          <li><span class="block py-2 px-3 text-slate-400 bg-slate-50 rounded text-sm cursor-not-allowed">ตารางเรียน/สอบ (ปิดใช้งาน)</span></li>
+          <li><span class="block py-2 px-3 text-slate-400 bg-slate-50 rounded text-sm cursor-not-allowed">ภาระค่าใช้จ่าย/ทุน (ปิดใช้งาน)</span></li>
+          <li><span class="block py-2 px-3 text-slate-400 bg-slate-50 rounded text-sm cursor-not-allowed">ผลการศึกษา (ปิดใช้งาน)</span></li>
+          <li><span class="block py-2 px-3 text-slate-400 bg-slate-50 rounded text-sm cursor-not-allowed">ออกจากระบบ (ปิดใช้งาน)</span></li>
+        </ul>
+      </nav>
+
+      <main class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+        <section>
+          <h2 class="text-lg font-bold text-orange-700 pb-2 mb-4 border-b-2 border-orange-200">สถิติการเข้าใช้ระบบของท่าน</h2>
+          
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs md:text-sm text-left border-collapse border border-slate-200">
+              <thead>
+                <tr class="bg-[#004d25] text-white">
+                  <th class="p-2 border border-slate-300">ลำดับ</th>
+                  <th class="p-2 border border-slate-300">วัน / เวลา</th>
+                  <th class="p-2 border border-slate-300">สถานะ</th>
+                  <th class="p-2 border border-slate-300">จาก (IP Address)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-slate-200 hover:bg-slate-50">
+                  <td class="p-2 border border-slate-200">1</td>
+                  <td class="p-2 border border-slate-200">14 ส.ค. 2569 (14:19)</td>
+                  <td class="p-2 border border-slate-200 text-green-600 font-bold">เข้าสู่ระบบสำเร็จ</td>
+                  <td class="p-2 border border-slate-200">10.4.XX.XX</td>
+                </tr>
+                <tr class="border-b border-slate-200 hover:bg-slate-50">
+                  <td class="p-2 border border-slate-200">2</td>
+                  <td class="p-2 border border-slate-200">12 ส.ค. 2569 (09:45)</td>
+                  <td class="p-2 border border-slate-200 text-green-600 font-bold">เข้าสู่ระบบสำเร็จ</td>
+                  <td class="p-2 border border-slate-200">10.4.XX.XX</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <aside class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm h-fit">
+        <h2 class="text-base font-bold text-[#004d25] pb-2 mb-3 border-b-2 border-green-100">ความปลอดภัย</h2>
+        <div class="text-sm space-y-2">
+          <p><strong>การป้องกัน:</strong> ปกติ</p>
+          <p><strong>เซสชัน:</strong> ใช้งานอยู่</p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="bg-slate-900 text-slate-400 text-xs py-4 text-center border-t-4 border-[#004d25] mt-auto">
+    <p>&copy; 2026 กลุ่มภารกิจทะเบียนเรียน ประมวลผล และรับเข้า มหาวิทยาลัยแม่โจ้</p>
+  </footer>
+
+</body>
+</html>
